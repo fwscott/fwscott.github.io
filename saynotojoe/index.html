@@ -41,7 +41,7 @@
             var sayNo = new Audio("nowayjoe.m4a");
             sayNo.play();
         }
-        if ('serviceworkder' in navigator) {
+        if ('serviceworker' in navigator) {
             navigator.serviceWorker.register('./sw.js');
         }
     </script>
