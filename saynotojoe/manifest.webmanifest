@@ -1,0 +1,16 @@
+{
+    "background_color": "purple",
+    "description": "Just says no to Joe.",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "/saynotojoe/icons/joe-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "name": "Just Say no to Joe",
+    "short_name": "Just Say no to Joe",
+    "start_url": "/saynotojoe/index.html",
+    "scope": "/saynotojoe/"
+}
