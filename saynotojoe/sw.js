@@ -5,8 +5,8 @@ const appShellFiles = [
   '/saynotojoe/nowayjoe.m4a',
   '/saynotojoe/joe.jpg',
   '/saynotojoe/favicon.ico',
-  '/saynotojoe/icons/icon-256.png',
-  '/saynotojoe/icons/icon-512.png'
+  '/saynotojoe/icons/joe-256.png',
+  '/saynotojoe/icons/joe-512.png'
 ];
 
 const contentToCache = appShellFiles;

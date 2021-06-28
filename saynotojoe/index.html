@@ -29,21 +29,71 @@
             height: 100vh;
 
         }
+
+        #clickMe {
+            position: relative;
+        }
+
+        #thesaying {
+            position: absolute;
+            top: 60%;
+            width: 100%;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, .5);
+            color: white;
+            font-size: 2em;
+        }
+
+        .add-button {
+            position: absolute;
+            top: 1px;
+            left: 1px;
+        }
     </style>
 </head>
 
 <body>
     <a id="clickMe" href="#" onclick="doClick()">
+        <div id="thesaying">Tap to say no</div>
         <img src="joe.jpg"" alt=" Click me to say no" />
     </a>
+    <button class="add-button">Add to home screen</button>
     <script>
         function doClick() {
             var sayNo = new Audio("nowayjoe.m4a");
             sayNo.play();
         }
-        if ('serviceworker' in navigator) {
+        if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./sw.js', { scope: '/saynotojoe/' });
         }
+        let deferredPrompt;
+        const addBtn = document.querySelector('.add-button');
+        addBtn.style.display = 'none';
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent Chrome 67 and earlier from automatically showing the prompt
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            // Update UI to notify the user they can add to home screen
+            addBtn.style.display = 'block';
+
+            addBtn.addEventListener('click', (e) => {
+                // hide our user interface that shows our A2HS button
+                addBtn.style.display = 'none';
+                // Show the prompt
+                deferredPrompt.prompt();
+                // Wait for the user to respond to the prompt
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    } else {
+                        console.log('User dismissed the A2HS prompt');
+                    }
+                    deferredPrompt = null;
+                });
+            });
+        });
     </script>
 </body>
 
