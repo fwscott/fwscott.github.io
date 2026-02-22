@@ -372,6 +372,68 @@
         }
 
         /* -- PILOT OFFER ------------------------ */
+        .esim-section {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border: 1px solid #93c5fd;
+            border-radius: var(--radius);
+            padding: 32px;
+        }
+
+        .esim-section h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #1e3a8a;
+            text-align: center;
+        }
+
+        .esim-section>p {
+            color: #1e40af;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .esim-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .esim-item {
+            background: rgba(255, 255, 255, .8);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #93c5fd;
+            text-align: center;
+        }
+
+        .esim-item .esim-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .esim-item h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin: 0 0 6px;
+        }
+
+        .esim-item p {
+            font-size: 14px;
+            color: #1e40af;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .esim-footnote {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 13px;
+            color: #3b82f6;
+        }
+
         .pilot {
             background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
             border: 1px solid #a7f3d0;
@@ -669,6 +731,10 @@
                 grid-template-columns: 1fr 1fr;
             }
 
+            .esim-grid {
+                grid-template-columns: 1fr;
+            }
+
             .compare {
                 flex-direction: column;
             }
@@ -716,7 +782,7 @@
             <div class="hero-badge">The anti-group-chat for tour operators</div>
             <h1>Stop Giving Your Guides&rsquo; Numbers<br>to 50 Strangers Every Week.</h1>
             <p class="subtitle">
-                VoyaReach lets your team broadcast trip updates via WhatsApp and SMS
+                VoyaReach lets your team broadcast trip updates via WhatsApp
                 without opening the floodgates to 2&nbsp;AM reply-all memes, privacy leaks,
                 or &ldquo;where is the bus?&rdquo; texts to a guide&rsquo;s personal phone.
             </p>
@@ -760,9 +826,9 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3>The &ldquo;Duty of Care&rdquo; button</h3>
-                    <p>One-click broadcast that reaches every traveler &mdash; even those who&rsquo;ve burned through
-                        their data plan. WhatsApp first, automatic SMS fallback.</p>
+                    <h3>Reliable delivery, any plan</h3>
+                    <p>One-click broadcast reaches every traveler on WhatsApp &mdash; whether they&rsquo;re on
+                        an international plan, hotel Wi-Fi, or an optional eSIM from our partner marketplace.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon fi-amber">
@@ -784,8 +850,8 @@
                         </svg>
                     </div>
                     <h3>Zero app installs</h3>
-                    <p>Travelers (and parents) don&rsquo;t need to download anything. Messages arrive on WhatsApp or SMS
-                        &mdash; apps they already have.</p>
+                    <p>Travelers (and parents) don&rsquo;t need to download anything. Messages arrive on WhatsApp
+                        &mdash; an app they already have.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon fi-rose">
@@ -832,6 +898,40 @@
                         your staff communicates professionally, and travelers keep their privacy too.
                     </p>
                 </div>
+            </div>
+        </section>
+
+        <!-- eSIM CONNECTIVITY (optional perk) -->
+        <section id="esim-connectivity">
+            <div class="esim-section">
+                <h2>&#128225; Optional: Affordable Data for Travelers Without a Plan</h2>
+                <p>Most travelers use their own international plan or hotel Wi-Fi &mdash; and that works great.
+                    For those who don&rsquo;t have coverage, we partner with Airalo to offer affordable eSIM data plans
+                    right from the check-in page. No pressure, just a helpful option.</p>
+                <div class="esim-grid">
+                    <div class="esim-item">
+                        <div class="esim-icon">&#128241;</div>
+                        <h4>Works with any setup</h4>
+                        <p>Travelers on roaming, Wi-Fi, or a local SIM receive broadcasts normally.
+                            eSIM is only for travelers who want a low-cost data option abroad.</p>
+                    </div>
+                    <div class="esim-item">
+                        <div class="esim-icon">&#127758;</div>
+                        <h4>Destination-matched plans</h4>
+                        <p>If a traveler opts in, they choose from 1&ndash;5 GB data plans tailored to the
+                            trip&rsquo;s destination. Europe from $4.50, global from $9.</p>
+                    </div>
+                    <div class="esim-item">
+                        <div class="esim-icon">&#9889;</div>
+                        <h4>2-minute activation</h4>
+                        <p>No SIM swap, no store visit. Travelers who want an eSIM activate it before the flight
+                            right from their phone. Trip leaders choose which plans to surface.</p>
+                    </div>
+                </div>
+                <p class="esim-footnote">
+                    Powered by Airalo &middot; Completely optional &middot; Works on iPhone XS+ and most Android phones
+                    with eSIM support
+                </p>
             </div>
         </section>
 
