@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRVTV9ZCZZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-JRVTV9ZCZZ');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel Agency Automation: What to Automate First | Scotty Scott</title>
+    <meta name="description" content="A practical guide to choosing a travel agency automation project: email processing, CRM handoffs, reporting, AI safeguards, and measuring a first pilot." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://www.fwscott.com/consulting/travel-agency-automation/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Travel Agency Automation: What to Automate First" />
+    <meta property="og:description" content="Choose a useful first automation project, decide where AI belongs, and measure the result before expanding." />
+    <meta property="og:url" content="https://www.fwscott.com/consulting/travel-agency-automation/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../consulting.css" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Travel agency automation: what to automate first",
+            "description": "A practical guide to choosing a first travel agency automation project and measuring a pilot.",
+            "mainEntityOfPage": "https://www.fwscott.com/consulting/travel-agency-automation/",
+            "author": {
+                "@type": "Person",
+                "@id": "https://www.fwscott.com/consulting/#scotty-scott",
+                "name": "Scotty Scott",
+                "url": "https://www.fwscott.com/consulting/#scotty-scott"
+            },
+            "inLanguage": "en"
+        }
+    </script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../">fwscott.com</a>
+            <a class="header-cta" href="../#contact">Discuss your workflow</a>
+        </div>
+    </header>
+    <main>
+        <article class="container" style="max-width: 52rem; padding: 3rem 0;">
+            <p class="section-kicker">Travel operations guide</p>
+            <h1>Travel agency automation: what to automate first</h1>
+            <p>By <a href="../#scotty-scott">Scotty Scott (Francis Scott)</a>, travel technology consultant</p>
+            <p class="lead">Start with a repeated, measurable handoff, not a new AI tool. Email triage,
+                copying data between systems, and routine reporting are candidates when the inputs are
+                accessible, exceptions are understood, and someone owns the process.</p>
+
+            <section class="workflows" aria-labelledby="first-project">
+                <h2 id="first-project">Choose a bottleneck you can measure</h2>
+                <p>Write down one task your team repeats: what triggers it, who performs it, which systems
+                    it touches, and what a correct result looks like. Count the weekly volume and time per
+                    item. Separate routine processing from exception handling; an average can hide the work
+                    that actually needs an experienced advisor.</p>
+                <p>Prioritize a task with frequent repetition, clear ownership, accessible data, and a
+                    recoverable failure mode. A low-volume task with unpredictable exceptions may be a
+                    process-design problem rather than a good first automation project.</p>
+            </section>
+
+            <section class="outcomes" aria-labelledby="candidates">
+                <h2 id="candidates">Four workflows worth examining</h2>
+                <h3>Email triage and follow-up</h3>
+                <p>Route supplier messages to the right queue, extract a deadline for review, and flag
+                    unanswered requests. Start with routing and visibility. Do not let an unreviewed AI
+                    interpretation create a client commitment or change a booking.</p>
+                <h3>CRM and back-office handoffs</h3>
+                <p>Identify fields copied from an inquiry or booking into another system. Confirm the
+                    source of truth, supported integration access, duplicate detection, and how corrections
+                    will flow back. Synchronizing inconsistent records can spread errors faster.</p>
+                <h3>Proposals and document preparation</h3>
+                <p>Assemble a draft from approved templates and verified source data. AI can help summarize
+                    unstructured material, but pricing, availability, and terms must come from authoritative
+                    systems and be checked before anything reaches the traveler.</p>
+                <h3>Reporting and reconciliation</h3>
+                <p>Automate a recurring export, matching step, or exception report. Define what counts as
+                    a match and send ambiguous records to a person. Preserve a traceable link to the source
+                    rather than silently overwriting a discrepancy.</p>
+            </section>
+
+            <section class="workflows" aria-labelledby="tool-choice">
+                <h2 id="tool-choice">AI, rules, or custom software?</h2>
+                <p><strong>Use rules-based automation</strong> when inputs are structured and the decision
+                    is predictable: route by supplier, flag a due date, or move an approved record.</p>
+                <p><strong>Consider AI with review</strong> when inputs vary: classify an email, extract
+                    proposed fields from a document, or summarize a conversation. Test against realistic
+                    examples and failures, not just a successful demo.</p>
+                <p><strong>Consider custom software</strong> when existing products cannot support a
+                    necessary workflow or connect your systems reliably. Check configuration and supported
+                    integrations first. A small missing connection may not justify replacing your platform.</p>
+            </section>
+
+            <section class="outcomes" aria-labelledby="constraints">
+                <h2 id="constraints">Check access and risk before a build</h2>
+                <p>Verify API permissions, vendor terms, data quality, and who can approve changes.
+                    Amadeus and Sabre workflows depend on the access your agency actually has; do not assume
+                    that a public API exposes every task available in an agent desktop.</p>
+                <p>Inventory sensitive traveler and payment data. Decide what can leave your systems,
+                    which vendor policies apply, and what needs to stay out of an AI prompt. Define human
+                    approval for booking changes, payments, and customer commitments, plus a manual fallback
+                    when an integration fails.</p>
+            </section>
+
+            <section class="workflows" aria-labelledby="pilot">
+                <h2 id="pilot">Run one bounded pilot</h2>
+                <p>Keep the first pilot to one workflow, a limited set of records, and an agreed review
+                    process. Record the baseline before changing it. Compare processing time, correction
+                    rate, overdue handoffs, and time spent reviewing the automation's output.</p>
+                <p>Net time saved means manual time avoided minus review, exception handling, and ongoing
+                    maintenance. If the pilot only moves work to another person, revisit the process.
+                    Expand when the result is useful and repeatable, not just because the demo worked.</p>
+                <h3>Bring these details to an assessment</h3>
+                <ul>
+                    <li>The task, weekly volume, and approximate time spent today</li>
+                    <li>The tools involved and available integration permissions</li>
+                    <li>The most common exceptions and the cost of a mistake</li>
+                    <li>The process owner and the measure that would justify investment</li>
+                </ul>
+                <p>Need help choosing or implementing the first project?
+                    <a href="../#focus">Explore the operations automation assessment</a> or
+                    <a href="../#contact">discuss your bottleneck</a>. My consulting covers travel agencies
+                    and tour operators; group travel is a specialty, not a prerequisite.</p>
+            </section>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p><a href="../">Scotty Scott | Travel Operations + Technology Consulting</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

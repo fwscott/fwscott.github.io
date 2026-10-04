@@ -55,6 +55,7 @@ body {
 
 main section {
     position: relative;
+    scroll-margin-top: 5rem;
 }
 
 a:focus-visible,
@@ -63,6 +64,11 @@ input:focus-visible,
 textarea:focus-visible {
     outline: 3px solid rgba(0, 144, 199, 0.45);
     outline-offset: 2px;
+}
+
+summary:focus-visible {
+    outline: 3px solid var(--rail);
+    outline-offset: 4px;
 }
 
 .site-header {
@@ -156,19 +162,19 @@ h3 {
 }
 
 h1 {
-    font-size: clamp(2rem, 5.6vw, 4rem);
-    max-width: 14ch;
+    font-size: 3.4rem;
+    max-width: 19ch;
     text-wrap: balance;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
 }
 
 h2 {
-    font-size: clamp(1.45rem, 3vw, 2.4rem);
+    font-size: 2rem;
     max-width: 24ch;
 }
 
 h3 {
-    font-size: clamp(1.08rem, 2.3vw, 1.42rem);
+    font-size: 1.3rem;
 }
 
 .lead {
@@ -540,6 +546,34 @@ li::before {
     cursor: pointer;
 }
 
+.btn:disabled {
+    opacity: 0.7;
+    cursor: wait;
+    transform: none;
+}
+
+.faq {
+    padding: 0 0 3.5rem;
+}
+
+.faq details {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--line);
+    max-width: 52rem;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--deep);
+}
+
+.faq details p {
+    margin: 0.8rem 0 0;
+    color: var(--muted);
+    max-width: 70ch;
+}
+
 .form-note {
     margin: 0.2rem 0 0;
     font-size: 0.82rem;
@@ -712,7 +746,11 @@ li::before {
     }
 
     h1 {
-        font-size: clamp(1.8rem, 11vw, 2.7rem);
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.65rem;
     }
 
     .btn {
