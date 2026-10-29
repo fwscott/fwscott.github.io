@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="Privacy policy for a private Home Assistant integration operated by Scotty Scott." />
+    <title>Home Automation Privacy Policy | Scotty Scott</title>
+    <style>
+        :root {
+            --paper: #f4f6f7;
+            --ink: #15202b;
+            --muted: #4b5a68;
+            --rule: #ccd5dc;
+            --route: #a3216e;
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.0625rem;
+            line-height: 1.62;
+        }
+
+        main {
+            width: min(40rem, 100% - 2.5rem);
+            margin: 3rem auto 4rem;
+        }
+
+        h1,
+        h2 {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.2;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            font-size: 1.15rem;
+        }
+
+        p.meta {
+            color: var(--muted);
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 1rem;
+        }
+
+        a {
+            color: var(--route);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Home Automation Privacy Policy</h1>
+        <p class="meta">Last updated October 29, 2026</p>
+
+        <p>This policy covers the private "Home Assistant" Google OAuth application operated by Scotty Scott
+            (fwscott.com). The application exists only to let a self-hosted Home Assistant server control the Google
+            Nest thermostats in homes that Scotty Scott owns or manages. It is not offered to the public.</p>
+
+        <h2>What data is accessed</h2>
+        <p>With your permission, through Google's Smart Device Management API, the application reads thermostat
+            information (names, temperature, humidity, mode, Eco status and setpoints) and changes thermostat settings.
+            It also receives device update messages through Google Cloud Pub/Sub. It does not access email, contacts,
+            files or any other Google account data.</p>
+
+        <h2>How data is used</h2>
+        <p>Thermostat data is used only to display and automate heating and cooling in the homes you authorized,
+            for example switching to Eco mode between guest stays. Data is stored on a private Home Assistant server
+            that is not reachable from the public internet.</p>
+
+        <h2>Sharing</h2>
+        <p>Data is not sold, shared with third parties, or used for advertising or analytics. It is processed only by
+            Google (as the device provider) and the private Home Assistant server.</p>
+
+        <h2>Retention and deletion</h2>
+        <p>Thermostat history is kept on the Home Assistant server for its normal recording period and can be deleted
+            at any time. You can revoke the application's access whenever you like in the Google Home app or at
+            <a href="https://nestservices.google.com/partnerconnections">Google Nest partner connections</a>.</p>
+
+        <h2>Google API Services User Data Policy</h2>
+        <p>Use of information received from Google APIs adheres to the
+            <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+                Policy</a>, including the Limited Use requirements.</p>
+
+        <h2>Contact</h2>
+        <p>Questions: use the <a href="https://www.fwscott.com/consulting/#contact">contact form</a>.</p>
+    </main>
+</body>
+
+</html>
